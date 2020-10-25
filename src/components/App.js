@@ -32,9 +32,10 @@ class App extends Component {
       if (event.key === "ArrowRight") {
         //console.log("clicked");
         this.setState({
-          posi: this.state.posi + 5
+          posi: this.state.posi + 5,
+          ballPosition: { left: this.state.posi + 5 + "px" }
         });
-        this.setState({ ballPosition: { left: this.state.posi + "px" } });
+        //this.setState({ ballPosition: { left: this.state.posi + "px" } });
       }
       //console.log(event.target.k);
     });
